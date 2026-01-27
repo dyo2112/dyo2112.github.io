@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Curriculum Vitae of Dvir Yogev - Post-Doctoral Researcher at UC Berkeley's Criminal Law & Justice Center.">
+    <title>CV | Dvir Yogev, Ph.D.</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-hero {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+        }
+
+        .page-hero h1 {
+            color: var(--text-light);
+        }
+
+        .page-hero p {
+            color: var(--text-muted);
+            max-width: 600px;
+        }
+
+        .cv-page {
+            padding: var(--space-lg) 0;
+        }
+
+        .cv-download {
+            margin-bottom: var(--space-lg);
+            text-align: center;
+        }
+
+        .cv-section {
+            margin-bottom: var(--space-lg);
+        }
+
+        .cv-section h3 {
+            color: var(--primary-dark);
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-xs);
+            border-bottom: 2px solid var(--berkeley-gold);
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: var(--space-md);
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--berkeley-blue), var(--berkeley-gold));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: var(--space-md);
+            padding-left: var(--space-md);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--berkeley-blue);
+            border: 2px solid var(--bg-light);
+        }
+
+        .timeline-item .date {
+            color: var(--berkeley-blue);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+        }
+
+        .timeline-item h4 {
+            color: var(--primary-dark);
+            margin-bottom: 4px;
+        }
+
+        .timeline-item .institution {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .timeline-item .details {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: var(--space-xs);
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .skill-group {
+            background: var(--bg-off-white);
+            padding: var(--space-md);
+            border-radius: 12px;
+        }
+
+        .skill-group h4 {
+            color: var(--primary-dark);
+            margin-bottom: var(--space-sm);
+            font-size: 1rem;
+        }
+
+        .skill-group ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .skill-group li {
+            padding: 4px 0;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .award-card {
+            background: var(--bg-off-white);
+            padding: var(--space-md);
+            border-radius: 12px;
+            border-left: 4px solid var(--berkeley-gold);
+        }
+
+        .award-card h4 {
+            color: var(--primary-dark);
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .award-card .amount {
+            color: var(--berkeley-blue);
+            font-weight: 600;
+        }
+
+        .initiatives-list {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .initiative-card {
+            background: var(--bg-off-white);
+            padding: var(--space-md);
+            border-radius: 12px;
+        }
+
+        .initiative-card h4 {
+            color: var(--primary-dark);
+            margin-bottom: var(--space-xs);
+        }
+
+        .initiative-card .date {
+            color: var(--berkeley-blue);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+        }
+
+        .initiative-card p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Dvir Yogev</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Curriculum Vitae</h1>
+            <p>A summary of my academic journey, research experience, and professional development.</p>
+        </div>
+    </section>
+
+    <!-- CV Content -->
+    <section class="cv-page">
+        <div class="container">
+
+            <!-- Download Button -->
+            <div class="cv-download">
+                <a href="assets/CV.pdf" class="btn btn-primary" target="_blank">📄 Download Full CV (PDF)</a>
+            </div>
+
+            <!-- Academic Appointments -->
+            <div class="cv-section">
+                <h3>🎓 Academic Appointments</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2024 – Present</span>
+                        <h4>Post-Doctoral Researcher</h4>
+                        <p class="institution">The Criminal Law & Justice Center, UC Berkeley</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="cv-section">
+                <h3>📚 Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2019 – 2024</span>
+                        <h4>Ph.D., Jurisprudence and Social Policy</h4>
+                        <p class="institution">University of California, Berkeley</p>
+                        <p class="details">
+                            Dissertation: "Criminal Justice Reform: Voting, Policing, and Public Attitudes"<br>
+                            Committee: Jonathan Simon (Chair), Rebecca Goldstein, Gabriel Lenz<br>
+                            Graduate Fellow, Berkeley Empirical Legal Studies<br>
+                            Graduate Fellow, Center for American Democracy, Stanford
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2018 – 2019</span>
+                        <h4>LL.M., Thesis Track</h4>
+                        <p class="institution">University of California, Berkeley</p>
+                        <p class="details">Dean's List at Berkeley Law (top 10% of LL.M. class)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2012 – 2016</span>
+                        <h4>LL.B. and B.A. in Linguistics</h4>
+                        <p class="institution">Tel Aviv University</p>
+                        <p class="details">Joint Program in Law and Humanities (Full Tuition)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Initiatives -->
+            <div class="cv-section">
+                <h3>🔬 Research Initiatives</h3>
+                <div class="initiatives-list">
+                    <div class="initiative-card">
+                        <span class="date">2024 – Present</span>
+                        <h4>AI for Defense Lawyers Portal</h4>
+                        <p>Created and maintain a comprehensive resource for public defenders on AI adoption, featuring
+                            tool evaluations, implementation case studies, and ethical guidelines.</p>
+                    </div>
+                    <div class="initiative-card">
+                        <span class="date">2024 – Present</span>
+                        <h4>Berkeley Empirical Research in Quantitative Justice (BERQ-J)</h4>
+                        <p>Founded and direct interdisciplinary workshop series for quantitative criminal justice
+                            research at UC Berkeley. Administer small grants program ($1,000–$2,000) supporting graduate
+                            student research.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="cv-section">
+                <h3>💻 Technical Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-group">
+                        <h4>Statistical Software</h4>
+                        <ul>
+                            <li>R</li>
+                            <li>STATA</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Programming</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>LaTeX</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Methods</h4>
+                        <ul>
+                            <li>Causal Inference</li>
+                            <li>Experimental Design</li>
+                            <li>Survey Methods</li>
+                            <li>Text Analysis & NLP</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selected Awards -->
+            <div class="cv-section">
+                <h3>🏆 Selected Awards & Grants</h3>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <h4>Berkeley LLM Outstanding Thesis Scholarship</h4>
+                        <span class="amount">$10,000</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>Berkeley Law, Economics, and Politics Center Fellowship</h4>
+                        <span class="amount">$7,000</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>Politics, Philosophy, and Law (PPL) Graduate Fellow</h4>
+                        <span class="amount">$6,500</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>CSLS Independent Summer Research Fellowship</h4>
+                        <span class="amount">$3,000</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>UC Berkeley CSLS Graduate Student Paper Prize</h4>
+                        <span class="amount">$1,000</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>Western Society of Criminology Paper Award</h4>
+                        <span class="amount">2021</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>Stanford Center for American Democracy Fellowship</h4>
+                        <span class="amount">$2,000</span>
+                    </div>
+                    <div class="award-card">
+                        <h4>Coblentz Civil Rights Endowment Fellowship</h4>
+                        <span class="amount">$2,500</span>
+                    </div>
+                </div>
+                <p class="mt-md" style="color: var(--text-muted); text-align: center;">
+                    Total research funding: $27,000+
+                </p>
+            </div>
+
+            <!-- Teaching -->
+            <div class="cv-section">
+                <h3>👨‍🏫 Teaching Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2020 – 2023</span>
+                        <h4>Graduate Student Instructor</h4>
+                        <p class="institution">UC Berkeley</p>
+                        <p class="details">
+                            • Quantitative Approaches to Law & Social Science (Graduate, Fall 2022, Fall 2023)<br>
+                            • Supreme Court and Public Policy (Fall 2020, Spring 2021, Fall 2021, Spring 2022)
+                        </p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2015 – 2016</span>
+                        <h4>Teaching Assistant</h4>
+                        <p class="institution">Tel Aviv University</p>
+                        <p class="details">
+                            Politics, Economics & Culture • Evidence Law • Legal Theory • Family Law
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Methods Training -->
+            <div class="cv-section">
+                <h3>📈 Methods Training</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="date">2021</span>
+                        <h4>ICPSR Summer Institute in Survey Research Techniques</h4>
+                        <p class="institution">University of Michigan</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="date">2019 – 2024</span>
+                        <h4>Graduate Coursework in Quantitative Methods</h4>
+                        <p class="institution">UC Berkeley</p>
+                        <p class="details">Causal Inference, Experimental Design, Machine Learning, Text Analysis,
+                            Survey Methods</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Service -->
+            <div class="cv-section">
+                <h3>🤝 Professional Service</h3>
+                <div class="skills-list">
+                    <div class="skill-group">
+                        <h4>Journal Reviewer</h4>
+                        <ul>
+                            <li>Public Opinion Quarterly</li>
+                            <li>American Politics Research</li>
+                            <li>Punishment & Society</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Professional Memberships</h4>
+                        <ul>
+                            <li>American Political Science Association</li>
+                            <li>Law and Society Association</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Dvir Yogev. Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
